@@ -24,6 +24,6 @@ const fetchSubreddit = async (subreddit) => {
     });
     postsElement.innerHTML = `<ul>${links}</ul`;
   } catch (error) {
-    console.log(`Error detected: ${error}`);
+    console.error("Error: ", error);
   }
 };
